@@ -1,0 +1,85 @@
+@font-face {
+    font-family: 'Roboto';
+    src: url('fonts/Roboto-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+  
+@font-face {
+    font-family: 'Montserrat';
+    src: url('fonts/Montserrat-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #008000;
+    padding: 10px;
+}
+  
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+  
+nav li {
+    margin: 0 10px;
+}
+  
+nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    height: 90vh;
+    background-size: cover;
+    background-position: center;
+    line-height: 1.3;
+    word-spacing: 5px;
+    text-shadow:2px 2px 2px rgba(255, 255, 255, 0.77);
+}
+
+.left-section, .middle-section, .right-section {
+    padding: 20px;
+    margin: 10px;
+    flex: 1;
+}
+
+.left-section {
+    background-image: url('plantation.png');
+}
+
+.middle-section {
+    background-image: url('travel.png');
+}
+
+.middle-section h2{
+    text-align: right;
+}
+
+.right-section {
+    background-image: url('watermelon-bg.jpg');
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #008000;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
