@@ -1,0 +1,207 @@
+@import url(fonts.css);
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+  
+header {    
+
+    background-color: #008000;
+    padding: 10px;
+}
+  
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+  
+nav li {
+    margin: 0 10px;
+}
+  
+nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.hero {
+    background-image: url('watermelon-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #000000;
+    text-shadow:2px 2px 4px rgba(255, 255, 255, 0.5);
+    text-align: center;
+    padding: 50px 20px;
+}
+  
+.hero h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+  
+.hero p {
+    font-size: 24px;
+    margin-bottom: 40px;
+}
+  
+.btn {
+    background-color: #008000;
+    border-radius: 5px;
+    color: #ffffff;
+    display: inline-block;
+    padding: 15px 30px;
+    text-decoration: none;
+}
+  
+.features {
+    display: flex;
+    justify-content: center;
+    margin: 75px 0;
+}
+  
+.feature {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin: 0 100px;
+    text-align: center;
+    width: 275px;
+}
+  
+.feature img {
+    height: 200px;
+    width: 300px;
+}
+
+@media (max-width: 1260px) {
+    .hero {
+      padding: 60px 20px;
+    }
+  
+    .hero h1 {
+      font-size: 36px;
+    }
+  
+    .hero p {
+      font-size: 18px;
+    }
+  
+    .features {
+      flex-direction: column;
+      margin: 60px 0;
+    }
+  
+    .feature {
+      margin-bottom: 100px;
+    }
+  
+    .feature img {
+      height: 150px;
+      width: 225px;
+    }
+  }
+
+.content {
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    line-height: 1.5;
+    padding: 20px; 
+    margin-bottom: 30px;
+}
+
+.left-section, .middle-section, .right-section {
+    padding: 20px;
+    margin: 10px;
+    flex: 1;
+}
+
+.left-section h2, .middle-section h2, .right-section h2 {
+    text-align: center;
+}
+
+.left-section p, .middle-section p, .right-section p {
+    font-size: 17px;
+    font-weight: 500;
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+.left-section {
+    background-image: url('plantation.jpg');
+}
+
+.middle-section {
+    background-image: url('travel.jpg');
+}
+
+.right-section {
+    background-image: url('watermelon-bg2.jpg');
+}
+
+@media (max-width: 784px) {
+    .content {
+      flex-direction: column;
+      height: auto;
+    }
+  
+    .left-section, .middle-section, .right-section {
+      flex: none;
+      width: 100%;
+      margin: 10px 0;
+      margin-bottom: 100px;
+    }
+  
+    .left-section, .middle-section, .right-section {
+      background-size: cover;
+      background-position: center;
+    }
+  }
+
+.map, .contact-info, .github {
+    margin: 50px;
+}
+
+.github {
+    position: absolute;
+    top: 50px;
+    right: 50px;
+}
+
+@media only screen and (max-width: 1160px) {
+    .map, .contact-info, .github {
+        margin: 20px;
+    }
+
+    .github {
+        position: static;
+        margin-top: 20px;
+        margin-right: 0;
+    }
+
+    .map{
+        margin-bottom: 100px;
+    }
+
+    iframe {
+        width: 100%;
+    }
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #008000;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}

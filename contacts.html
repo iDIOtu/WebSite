@@ -4,20 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styleContacts.css">
+    <link rel="stylesheet" href="style.css">
     <title>Контакты</title>
 </head>
 
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Главная</a></li>
-                <li><a href="info.html">Подробная информация</a></li>
-                <li><a href="contacts.html">Контакты</a></li>
-            </ul>
-        </nav>
-    </header>
+    <div data-include-html="header.html"></div>
 
     <main>
         <section class="github">
@@ -39,8 +31,7 @@
         </section>
     </main>
 
-    <footer>
-        <p>&copy; 2024 Watermelon Corporation. Все права защищены.</p>
-    </footer>
+    <div data-include-html="footer.html"></div>
+    <script src="includeHTML.js"></script>
 </body>
 </html>
